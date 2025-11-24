@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+/* header */
+.header {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 12%;
+}
+
+.logo {
+    width: 100px;
+    /* border: 2px solid gold; */
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav ul {
+    /* border: 2px solid blue; */
+    display: flex;
+    gap: 40px;
+    width: 386px;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+label {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#checkbtn {
+    display: none;
+}
+
+.icons {
+    width: 6%;
+    display: flex;
+    gap: 25px;
+
+}
+
+.icons img {
+    width: 50%;
+}
+
+.header button {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.header button a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* dishes */
+.dishes {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menucard {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.menucard:hover {   
+    box-shadow: 0px 0px 10px 1px #aa9797;
+}
+
+.productimg {
+    width: 250px;
+}
+
+.productimg img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;  
+}
+
+
+.box {
+    padding: 5px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.box p {
+    padding: 5px;
+    font-size: 10px;
+    color: darkgrey;
+}
+
+.price p {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: tomato;
+}
+
+/* footer */
+footer {
+    margin-top: 30px;
+    background: url(./assets/foot\ bg.jpg) no-repeat center center/cover;
+    color: #fff;
+    background-size: cover;
+
+}
+
+.footer-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 30px 50px;
+}
+
+/* Footer Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Columns */
+.footer-col h3,
+.footer-col h2 {
+    margin-bottom: 15px;
+    color: #ff4c24;
+}
+
+.footer-col p {
+    color: #ccc;
+    text-align: justify;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff4c24;
+}
+
+/* Social Media */
+.socialicons a {
+    display: inline-block;
+    background: #ff4c24;
+    color: #ffffff;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.socialicons a:hover {
+    background: #fff;
+    color: #ff4c24;
+    transform: translateY(-3px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Logo Styling */
+.footlogo {
+    /* border: 2px solid red; */
+    width: 120px;
+}
+
+.footlogo img {
+    width: 100%;
+}
+
+@media all and (max-width:600px) {
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        padding: 50px;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 360px;
+    }
+
+    nav ul li 
+    {
+        color: white;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    nav ul li a {
+        display: block;
+
+    }
+
+    .icons {
+        display: none;
+    }
+
+    label {
+        display: block;
+        margin-left: 250px;
+    }
+
+    #checkbtn:checked~nav ul {
+        display: flex;
+        background-color: orangered;
+    }
+    footer {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .socialicons {
+        display: flex;
+        width: 170px;
+        height: 100px;
+        border-radius: 100%;
+    }
+}
