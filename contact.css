@@ -70,13 +70,12 @@ nav ul a {
     color: #000;
     font-weight: bold;
 }
-.header label {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-}
 
-#checkbtn{
+#checkbtn {
+    display: none;
+}
+label
+{
     display: none;
 }
 
@@ -260,25 +259,35 @@ footer {
         display: none;
         flex-direction: column;
         text-align: center;
+        width: 360px;
     }
 
     nav ul li {
         color: white;
     }
+
+    .header button {
+        display: none;
+    }
+
     nav ul li a {
         display: block;
 
     }
+
+    .icons {
+        display: none;
+    }
+
     .header label {
         display: block;
         margin-left: 250px;
     }
 
-    #checkbtn:checked~nav{
+    #checkbtn:checked~nav ul {
         display: flex;
         background-color: orangered;
     }
-
 
     form label {
         margin-left: 0px;
